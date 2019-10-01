@@ -2,8 +2,10 @@ import React from 'react';
 import './App.css';
 import axios from 'axios'
 import GithubCard from './components/GithubCard'
+import GithubFollowers from './components/GithubFollowers';
 
 const githubAPI = 'https://api.github.com/users/funmi7'
+
 
 class App extends React.Component {
   constructor(props) {
@@ -38,6 +40,7 @@ class App extends React.Component {
         following={following}
         bio={bio}
         />
+        <GithubFollowers />
       </div>
     );
   }
